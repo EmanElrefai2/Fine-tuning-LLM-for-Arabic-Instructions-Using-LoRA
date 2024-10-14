@@ -27,11 +27,7 @@ This project aims to improve the performance of the Qwen1.5-7B model on Arabic l
    pip install -r requirements.txt
    ```
 
-3. Ensure you have sufficient GPU memory (at least 16GB recommended) for fine-tuning.
-
 ## Fine-tuning Process
-
-The fine-tuning process is implemented in `finetuning_llm.py`. Here's how to use it:
 
 1. Review and adjust the hyperparameters at the top of the script if needed.
 
@@ -40,17 +36,8 @@ The fine-tuning process is implemented in `finetuning_llm.py`. Here's how to use
    python finetuning_llm.py
    ```
 
-3. The script will:
-   - Load the Qwen1.5-7B model
-   - Apply 4-bit quantization
-   - Configure LoRA for efficient fine-tuning
-   - Load the Arabic instruction dataset
-   - Fine-tune the model
-   - Save the fine-tuned model locally and push it to the Hugging Face Hub
 
 ## Evaluation
-
-The evaluation process is implemented in `evaluate_model.py`. This script compares the performance of the base model and the fine-tuned model.
 
 To run the evaluation:
 
